@@ -45,6 +45,9 @@ def get_distance_API(lat1, lng1, lat2, lng2):
     return round(float(distance)/1000, 3)
 
 def get_distance_locally(lat_a, lon_a,lat_b, lon_b):
+    """
+    Credit : https://qiita.com/damyarou/items/9cb633e844c78307134a
+    """
     ra=6378.140  # equatorial radius (km)
     rb=6356.755  # polar radius (km)
     F=(ra-rb)/ra # flattening of the earth
