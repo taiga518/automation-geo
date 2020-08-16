@@ -87,4 +87,4 @@ def add_location_info(input_df):
 df = pd.read_csv("PATH.csv")
 df = df[["name","address"]]
 df_loc = add_location_info(df)
-df_loc.to_csv("output.csv")
+df_loc.to_csv("output.csv", encoding='utf_8_sig')
